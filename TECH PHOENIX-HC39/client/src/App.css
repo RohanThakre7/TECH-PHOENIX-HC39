@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes up the full height of the viewport */
+}
+
+.content {
+  flex: 1; /* Allows content to take up remaining space */
+  padding: 20px;
+}

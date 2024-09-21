@@ -1,0 +1,79 @@
+.home-page {
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Added for positioning the quiz link */
+}
+
+.field-title {
+  margin: 20px 0;
+  font-size: 2rem;
+  display: inline-block; /* Centered alignment */
+}
+
+.quiz-link {
+  position: absolute; /* Positioning it at the top right */
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding for the link */
+  border-radius: 8px; /* Circular shape */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.quiz-link:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly scale on hover */
+}
+
+.field-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+
+.field-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%; /* Full width of the container */
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.field-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-details {
+  display: none; /* Hidden by default */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.field-card.active .card-details {
+  display: block; /* Show details when card is active */
+}
+
+.mentor-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.mentor-link:hover {
+  text-decoration: underline;
+}

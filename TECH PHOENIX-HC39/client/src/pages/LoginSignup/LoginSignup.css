@@ -1,0 +1,74 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.page-container h2 {
+  margin-bottom: 15px; /* Reduced bottom margin */
+  font-size: 2.5rem;
+  color: #333; /* Darker text for better readability */
+}
+
+.auth-form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 350px; /* Increased width for better layout */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; /* Added some margin to the top of the form */
+}
+
+.form-group{
+  display:flex;
+  flex-direction: column;
+}
+
+.auth-form select, 
+.auth-form input {
+  margin-bottom: 15px;
+  padding: 15px; /* Increased padding for better touch area */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.auth-form select:focus,
+.auth-form input:focus {
+  border-color: #ff4081; /* Highlight border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.auth-form button {
+  padding: 12px; /* Adjust button padding */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+  transform: translateY(-2px);
+}
+
+.toggle-link {
+  margin-top: 15px; /* Adjusted margin for the toggle link */
+  color: #007bff; /* Blue link color */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.toggle-link:hover {
+  color: #0056b3; /* Darker color on hover */
+}
